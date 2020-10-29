@@ -1,4 +1,4 @@
-const groupArrayItems = require('./index');
+const groupArrayItems = require('./groupArrayElements');
 const assert = require('assert');
 
 describe('groupArrayItems', () => {

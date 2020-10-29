@@ -25,4 +25,13 @@ const groupArrayElements = (arr, n) => {
   return result;
 };
 
+if (
+  RegExp('node$').test(process.argv[0]) &&
+  RegExp('groupArrayElements.js$').test(process.argv[1])
+) {
+  const arr = JSON.parse(process.argv[2]);
+  const n = Number(process.argv[3]);
+  const result = groupArrayElements(arr, n);
+  console.log(JSON.stringify(result, null, 2));
+}
 module.exports = groupArrayElements;
