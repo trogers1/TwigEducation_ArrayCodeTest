@@ -38,4 +38,4 @@ If you would like to run it as a node executable script, simply do so and provid
 $ ./groupArrayItems.js "[1,2,3,4]" 1
 ```
 
-> Make sure that `node` is available in your PATH to execute files.
+> Make sure that `node` is available in your PATH to execute files in this way. Alternatively, you could use `node ./groupArrayItems.js "[1,2,3,4]" 1`
