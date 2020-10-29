@@ -20,4 +20,9 @@ describe('groupArrayItems', () => {
       assert.throws(() => groupArrayItems({}, 1));
     });
   });
+  describe('should accurately return the desired result', () => {
+    it('=> should return the correct result when N is greater than array length', () => {
+      assert.deepStrictEqual(() => groupArrayItems([1, 2, 3, 4], 5), [[1, 2, 3, 4]]);
+    });
+  });
 });
