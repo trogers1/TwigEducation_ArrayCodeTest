@@ -11,6 +11,13 @@ describe('groupArrayItems', () => {
       assert.throws(() => groupArrayItems([1, 2, 3, 4], '4'));
       assert.throws(() => groupArrayItems([1, 2, 3, 4], 'test'));
       assert.throws(() => groupArrayItems([1, 2, 3, 4], true));
+      assert.doesNotThrow(() => groupArrayItems([1, 2, 3, 4], 1));
+    });
+    it('=> should throw an error if arr arg is not an array', () => {
+      assert.throws(() => groupArrayItems('[]', 2));
+      assert.throws(() => groupArrayItems(3000, 2));
+      assert.throws(() => groupArrayItems(true, 1000));
+      assert.throws(() => groupArrayItems({}, 1));
     });
   });
 });
