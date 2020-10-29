@@ -25,5 +25,9 @@ describe('groupArrayItems', () => {
       const result = groupArrayItems([1, 2, 3, 4], 5);
       assert.deepStrictEqual(result, [[1, 2, 3, 4]]);
     });
+    it('=> should return the correct result when N is equal to the array length', () => {
+      const result = groupArrayItems([1, 2, 3, 4], 4);
+      assert.deepStrictEqual(result, [[1, 2, 3, 4]]);
+    });
   });
 });
