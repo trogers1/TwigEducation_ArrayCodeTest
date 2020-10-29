@@ -1,8 +1,18 @@
 #!/usr/bin/env node
 'use strict';
 
-const groupArrayElements = () => {
-  return -1;
+/**
+ * This function splits the provided array (`arr`) into sections of length `n`.
+ * It does so using the `reduce` Array method.
+ * @param {Array} arr The array to be split
+ * @param {Number} n The size of each split
+ */
+const groupArrayElements = (arr, n) => {
+  if (!Number.isInteger(n)) {
+    throw new Error(`n must be an integer. Got: ${n}`);
+  } else if (n < 1) {
+    throw new Error(`n must be a positive integer. Got: ${n}`);
+  }
 };
 
 module.exports = groupArrayElements;
