@@ -2,7 +2,7 @@
   "name": "twigeducation_arraycodetest",
   "version": "1.0.0",
   "description": "A small code test about array splitting",
-  "main": "index.js",
+  "main": "groupArrayElements.js",
   "scripts": {
     "test": "mocha ./**.test.js"
   },
