@@ -32,6 +32,13 @@ const groupArrayItems = require('./groupArrayItems');
 import groupArrayItems from './groupArrayItems';
 ```
 
+After that, you can provide an array as the first argument and the desired length of splits as an integer as a second argument.
+
+```js
+groupArrayItems([1, 2, 3, 4], 2);
+// returns [[1,2], [3,4]]
+```
+
 If you would like to run it as a node executable script, simply do so and provide the arguments as command line arguments ike so (note the quotes around the array):
 
 ```bash
