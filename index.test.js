@@ -33,5 +33,16 @@ describe('groupArrayItems', () => {
       const result = groupArrayItems([], 4);
       assert.deepStrictEqual(result, []);
     });
+    it('=> should return the correct result when n does not divide equally into the array length is 0', () => {
+      let result = groupArrayItems([1, 2, 3, 4, 5], 2);
+      assert.deepStrictEqual(result, [[1, 2], [3, 4], [5]]);
+      result = groupArrayItems([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11], 3);
+      assert.deepStrictEqual(result, [
+        [1, 2, 3],
+        [4, 5, 6],
+        [7, 8, 9],
+        [10, 11]
+      ]);
+    });
   });
 });
