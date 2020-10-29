@@ -35,7 +35,7 @@ import groupArrayItems from './groupArrayItems';
 If you would like to run it as a node executable script, simply do so and provide the arguments as command line arguments ike so (note the quotes around the array):
 
 ```bash
-./groupArrayItems.js "[1,2,3,4]" 1
+$ ./groupArrayItems.js "[1,2,3,4]" 1
 ```
 
 > Make sure that `node` is available in your PATH to execute files.
