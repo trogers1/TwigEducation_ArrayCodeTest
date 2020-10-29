@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/trogers1/TwigEducation_ArrayCodeTest/issues"
   },
-  "homepage": "https://github.com/trogers1/TwigEducation_ArrayCodeTest#readme"
+  "homepage": "https://github.com/trogers1/TwigEducation_ArrayCodeTest#readme",
+  "dependencies": {
+    "mocha": "^8.2.0"
+  }
 }
