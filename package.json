@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/trogers1/TwigEducation_ArrayCodeTest#readme",
   "dependencies": {
-    "mocha": "^8.2.0"
+    "mocha": "^8.2.0",
+    "prettier": "^2.1.2"
   }
 }
