@@ -29,5 +29,9 @@ describe('groupArrayItems', () => {
       const result = groupArrayItems([1, 2, 3, 4], 4);
       assert.deepStrictEqual(result, [[1, 2, 3, 4]]);
     });
+    it('=> should return the correct result when the array length is 0', () => {
+      const result = groupArrayItems([], 4);
+      assert.deepStrictEqual(result, []);
+    });
   });
 });
